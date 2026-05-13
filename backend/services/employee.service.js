@@ -22,7 +22,6 @@ async function addEmployee(employeeData) {
     return null;
   }
 }
-
 // Export the function
 module.exports = {
   addEmployee

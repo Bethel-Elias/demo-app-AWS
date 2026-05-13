@@ -21,7 +21,8 @@ function AddEmployee(props) {
       password: password
     };
     // Send the data to the server  
-    const apiUrl = "http://44.211.174.118:4000/add-employee";
+    // const apiUrl = "http://44.211.174.118:4000/add-employee";
+    const apiUrl = "http://44.202.197.239:5001/add-employee";
     const requestOptions = {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -49,7 +50,7 @@ function AddEmployee(props) {
         <label htmlFor="email">Email:</label><br />
         <input type="text" id="email" name="email" value={emailAddress} onChange={event => setEmailAddress(event.target.value)} /><br />
         <label htmlFor="password">Password:</label><br />
-        <input type="text" id="password" name="password" value={password} onChange={event => setPassword(event.target.value)} /><br /><br />
+        <input type="password" id="password" name="password" value={password} onChange={event => setPassword(event.target.value)} /><br /><br />
         <input type="submit" value="Submit" />
       </form>
     </div>
